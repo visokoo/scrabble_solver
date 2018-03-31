@@ -1,0 +1,103 @@
+Scrabble Solver
+
+Summary
+
+  Implement a command-line program that returns Scrabble words for a given set of letters.
+
+Data source
+
+  Use the list of words here: http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt
+
+Specification
+
+    There are two cases that need to be covered:
+
+    1. The dictionary contains words that can be spelled with the given letters.
+
+      A list of strings is returned, where each entry is a word. They are sorted by Scrabble score, from highest to lowest scoring. For example:
+
+      Input:             hat
+      Expected response: hat
+                         ah
+                         ha
+                         th
+                         at
+                         a
+
+      The letters are like Scrabble tiles. Order is unimportant:
+
+      Input:             aht
+      Expected response: hat
+                         ah
+                         ha
+                         th
+                         at
+                         a
+
+      The letters are not case-sensitive, so this returns the same results:
+
+      Input:             HAT
+      Expected response: hat
+                         ah
+                         ha
+                         th
+                         at
+                         a
+
+      Input:             Hat
+      Expected response: hat
+                         ah
+                         ha
+                         th
+                         at
+                         a
+
+    2. No dictionary words can be spelled with the given letters.
+
+      No output is returned. For example:
+
+      Input:             zzz
+      Expected response:
+
+  The Scrabble score is calculated by adding up the point values of every letter in the word.
+
+    The point values are:
+
+    Points | Letters
+    -------+-----------------------------
+       1   | A, E, I, L, N, O, R, S, T, U
+       2   | D, G
+       3   | B, C, M, P
+       4   | F, H, V, W, Y
+       5   | K
+       8   | J, X
+      10   | Q, Z
+
+    For example, the following words have these scores:
+
+    hat:  6
+    code: 7
+    antidisestablishmenatarianism: 39
+
+    (From https://en.wikipedia.org/wiki/Scrabble_letter_distributions)
+
+Implementation details
+
+  1.  You have three days to complete the coding exercise.
+  2.  You may use Python, Perl, Ruby or Groovy
+  3.  Your code must be maintainable, well-documented, testable, and understandable. This isn't about speed, it's about
+      quality.
+  4.  Write your code as if this was a real, production application. Real code needs proper test coverage.
+  5.  You may use any open source frameworks, libraries, build tools, or freely-available code that you can find on the
+      Internet. Resourcefulness is more important than previous knowledge.
+  6.  You may not ask anyone else for help or advice, but you may use any other information source, including websites.
+      Discussion forums are acceptable as long as you do not participate in the discussion.
+  7.  Your program must be runnable from a Linux command line.
+  8.  Include a readme.txt file in the root of the zip file that explains any instructions the reviewer will need,
+      including any software that needs to be installed beforehand and the commands to build, test, and run the program.
+  9.  Any implementation details not specifically mentioned in this document are at your discretion.
+  10. Submit your exercise as a zip file using WeTransfer. Go to https://www.wetransfer.com, click "Add files", add your
+      zip file, enter adam.garcia@bluenile.com in the "Friend's email" box and your own email in "Your email". Please
+      don't email the file directly adam.garcia@bluenile.com. Our email security system will filter it out and we won't
+      receive it.
+  11. If you have any questions, feel free to send me an email at adam.garcia@bluenile.com.
