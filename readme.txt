@@ -1,7 +1,7 @@
 - Tested with ruby 2.4.2
 
 To use:
-After unzipping, `cd` to the dir and run `./scrabble_solver <arg>`
+After unzipping, `cd` to the dir and run `./scrabble_solver.rb <arg>`
 
 To run tests:
 score_test.rb
