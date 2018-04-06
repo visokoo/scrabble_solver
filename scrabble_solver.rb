@@ -28,7 +28,7 @@ module Scrabble
         # its letters are in input
         words_to_keep << word if letter_not_in_input == false
       end
-      words_to_keep.sort_by{ |word| word.length}.reverse.sort_by { |word| Scrabble::Scoring.score(word) }.reverse
+      words_to_keep.sort_by { |word| 0 - Scrabble::Scoring.score(word) }
     end
   end
 end
